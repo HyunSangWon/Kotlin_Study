@@ -1,0 +1,10 @@
+application:
+  version: v1.0.0
+  title: cntech-food-list
+spring:
+  thymeleaf:
+    cache: false
+    mode: HTML
+  devtools:
+    restart:
+      enabled: true
