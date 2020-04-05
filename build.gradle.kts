@@ -33,10 +33,18 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
-	//Thymeleaf
+	// Thymeleaf
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-	//devtools
+	// Devtools
 	compile("org.springframework.boot:spring-boot-devtools")
+	// JPA
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	// MySQL
+	runtimeOnly("mysql:mysql-connector-java")
+	//DB MariaDB
+	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+	//JDBC
+	implementation("org.springframework.boot:spring-boot-starter-jdbc")
 }
 
 tasks.withType<Test> {
